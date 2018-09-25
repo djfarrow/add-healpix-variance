@@ -1,0 +1,7 @@
+2018-09-25 Daniel Farrow
+
+    First commit of code to add data from a HEALpix
+    map into an existing catalogue
+    * add_healpix_variance.c
+    * Makefile
+    * tests/ : Test data for code
