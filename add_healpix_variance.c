@@ -44,9 +44,10 @@ int main(int argc, char* argv[])
    char coord[10], ordering[10];    
 
    /* Variables for reading/writing the catalogues*/
-   int status=0, ncols, colnum, i;
    fitsfile *fin, *fout;
    long nrows=1;
+   long i;
+   int status=0, ncols, colnum;
 
    /* Arrays for actually adding the HEALpix map thingy*/
    float *ra, *dec;
@@ -114,7 +115,7 @@ int main(int argc, char* argv[])
   fits_insert_col(fout, ncols + 1, outcname, "E", &status);
 
   /* Look up HEALpix values */
-  for(int i = 0; i<nrows; i++){
+  for(i = 0; i<nrows; i++){
       long index = -99;
       float theta = PI/2.0 - dec[i]*DEG2RAD; //between 0 and pi
       float phi = ra[i]*DEG2RAD;

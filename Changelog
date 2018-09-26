@@ -1,5 +1,11 @@
 2018-09-26 Daniel Farrow
 
+  * modified:   Makefile: Use the HEALPIX environment variable
+  * modified:   add_healpix_variance.c: Fix multiple declaration of `i`
+
+
+2018-09-26 Daniel Farrow
+
   * modified:   add_healpix_variance.c: Added more digits to PI
 
 2018-09-26 Daniel Farrow

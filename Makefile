@@ -1,6 +1,6 @@
 C = gcc
-CCFLAGS = -I/home/dfarrow/Healpix_3.40/include -I/home/dfarrow/cfitsio/include
-LDFLAGS = -L/home/dfarrow/Healpix_3.40/lib -L/home/dfarrow/cfitsio/lib
+CCFLAGS = -I${HEALPIX}/include -I/home/dfarrow/star-2014A/include/
+LDFLAGS = -L${HEALPIX}/lib -L/home/dfarrow/star-2014A/lib
 LIBS =   -lchealpix -lcfitsio -lm -lgsl -lgslcblas
 
 
