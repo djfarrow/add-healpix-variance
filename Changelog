@@ -1,3 +1,14 @@
+2018-09-26 Daniel Farrow
+
+   Replace the old test data with new test data that's
+   around the sky coordinates of one of the PS1 medium
+   deep fields
+   * new file:   tests/data/README: Explanation of test data
+   * new file:   tests/data/test_cat_md.fits
+   * new file:   tests/data/test_cat_md_out.fits
+   * deleted:    tests/data/test_in.fits
+
+
 2018-09-25 Daniel Farrow
 
     First commit of code to add data from a HEALpix
