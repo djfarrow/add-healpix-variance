@@ -1,5 +1,9 @@
 2018-09-26 Daniel Farrow
 
+  * modified:   add_healpix_variance.c: Added more digits to PI
+
+2018-09-26 Daniel Farrow
+
    Replace the old test data with new test data that's
    around the sky coordinates of one of the PS1 medium
    deep fields

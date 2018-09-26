@@ -28,8 +28,8 @@
 #include "fitsio.h"
 #include "chealpix.h"
 
-const double PI = 3.141; // XXX Replace
-const double DEG2RAD = 3.141/180.0; 
+const double PI = 3.14159265359; 
+const double DEG2RAD = 3.14159265359/180.0; 
 
 int main(int argc, char* argv[])
 {
