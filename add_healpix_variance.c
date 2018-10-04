@@ -28,8 +28,8 @@
 #include "fitsio.h"
 #include "chealpix.h"
 
-#define PI  3.14159265359; 
-const double DEG2RAD = PI/180.0; 
+#define PI 3.14159265359 
+#define DEG2RAD 0.01745329251 
 
 int main(int argc, char* argv[])
 {
