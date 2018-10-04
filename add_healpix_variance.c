@@ -2,24 +2,24 @@
  *
  *  Add the variance measured from a HEALpix map
  *  to a FITs catalogue. Borrows from fitscopy.c
+ * 
+ *  AUTHOR(S): Daniel Farrow (MPE)
  *
- *
- *  USAGE: add_snr_to_catalogue in_cat out_cat in_hp racname deccname outcname
+ *  USAGE
+ *  -----
+ * 
+ *  add_snr_to_catalogue in_cat out_cat in_hp racname deccname outcname
  *  
- *  incat -> Input fits catalogue. Must be a fits-basic catalogue, not the 
- *           default fits-plus that libraries such as Starlink outputs
+ *  incat: Input fits catalogue. Must be a fits-basic catalogue, not the 
+ *         default fits-plus that libraries such as Starlink outputs
  *  
- *  outcat -> Output fits file
+ *  outcat: Output fits file
  *
- *  in_hp -> Input Healpix fits file
+ *  in_hp: Input Healpix fits file
  *
- *  racname, deccname -> Name of RA/Dec columns in input file
+ *  racname, deccname: Names of RA/Dec columns in input file
  *
- *  outcname -> Name for output column
- *
- *
- *  AUTHOR: Daniel Farrow
- *
+ *  outcname: Name for output column
  *
  */
 
@@ -28,8 +28,8 @@
 #include "fitsio.h"
 #include "chealpix.h"
 
-const double PI = 3.14159265359; 
-const double DEG2RAD = 3.14159265359/180.0; 
+#define PI  3.14159265359; 
+const double DEG2RAD = PI/180.0; 
 
 int main(int argc, char* argv[])
 {
@@ -39,7 +39,6 @@ int main(int argc, char* argv[])
 
    /* HEALpix-required parameters */
    long nsides;
-   float npix;
    float* input_hp;
    char coord[10], ordering[10];    
 
@@ -55,7 +54,7 @@ int main(int argc, char* argv[])
 
    /*Read in input*/
    if(argc < 7){
-      printf("USAGE: add_snr_to_catalogue in_cat out_cat in_hp racname deccname outcname\n");
+      printf("USAGE: add_healpix_variance in_cat out_cat in_hp racname deccname outcname\n");
       return 1;
    }
    else

@@ -1,3 +1,12 @@
+2018-10-04 Daniel Farrow
+
+  * new file:   convert_to_nsigma.c: New code to create maps of Nsigma
+                                     magnitudes
+  * modified:   Makefile: Added new code
+  * modified:   add_healpix_variance.c: Declared "PI" with "#define", modified
+                                        comments
+
+
 2018-09-26 Daniel Farrow
 
   * modified:   Makefile: Use the HEALPIX environment variable
